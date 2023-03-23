@@ -34,7 +34,9 @@ const app = initializeApp(firebaseConfig);
 const db = getFirestore(app);
 
 const querySnapshot = await getDocs(collection(db, "users"));
+ console.log(querySnapshot)
 querySnapshot.forEach((doc) => {
+    console.log("HI");
   console.log(`${doc.id} => ${doc.data()}`);
 });
 </script>
