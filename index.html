@@ -26,6 +26,11 @@ const firebaseConfig = {
   appId: "1:719178374708:web:5e91d557296686fb0f7461",
   measurementId: "G-5G1B9Y9KB3"
 };
+    
+
+
+// Initialize Cloud Firestore and get a reference to the service
+const db = getFirestore(app);
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
 
