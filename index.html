@@ -58,7 +58,7 @@ await setDoc(doc(citiesRef, "BJ"), {
     capital: true, population: 21500000,
     regions: ["jingjinji", "hebei"] })
       
-const docRef = doc(db, "cities", "SF");
+const docRef = doc(db, "wordstudy", "word");
 const docSnap = await getDoc(docRef);
 
 if (docSnap.exists()) {
